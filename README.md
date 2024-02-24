@@ -1,5 +1,5 @@
-## Snake Game
-
+## [Snake Game](https://snake-classic-game.netlify.app/)
+[Live](https://snake-classic-game.netlify.app/)
 The Snake Game is a classic arcade game where the player controls a snake that moves around the game board, eating food to grow longer while avoiding collisions with itself and the walls of the game board. This project is a simple implementation of the Snake Game using HTML, CSS, and JavaScript.
 
 ### Features

@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-color: #212837;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#game-board {
+    background-color: white;
+    width: 70vmin;
+    height: 70vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    border-radius: 8px;
+}
+
+.snake {
+    background-color: #badd78;
+    border: 0.25vmin solid black;
+}
+
+.food {
+    background-color: #ad2f2f;
+    border: 0.25vmin solid black;
+}
+
+header {
+    font-size: 28px;
+    margin: 10px 4px;
+    color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-details {
+    background: #293447;
+    color: #b8c6dc;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 65vmin;
+    padding: 10px 2.5vmin;
+    border: 2px solid #b8c6dc;
+    border-radius: 8px;
+}
+
+.game-selectors {
+    background: #293447;
+    color: #b8c6dc;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    width: 65vmin;
+    padding: 10px 2.5vmin;
+    border: 2px solid #b8c6dc;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button,
+select {
+    border-radius: 8px;
+    padding: 3px 6px;
+    color: #b8c6dc;
+    background: #293447;
+    border: 2px solid #b8c6dc;
+}
+
+select>option {
+    background-color: #293447;
+}
+
+#game-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+#restart-button:hover,
+#pause-button:hover {
+    color: #fff;
+}
+
+#controls {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        /* padding: 2vmin; */
+        font-size: 24px;
+    }
+
+    body>div {
+        /* margin-top: 30px; */
+        gap: 12px;
+    }
+
+    #game-board {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .game-selectors,
+    .game-details {
+        width: 85vmin;
+        padding: 8px 2vmin;
+    }
+
+    #controls {
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin: 5px;
+    }
+}

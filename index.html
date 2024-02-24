@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Snake Game</title>
+    <script src="game.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>Snake Game</header>
+    <div>
+      <div class="game-selectors">
+        <span class="speed"
+          >Speed:&nbsp;
+          <select id="speed-selector">
+            <option value="3">Slow</option>
+            <option value="5">Medium</option>
+            <option value="7">Fast</option>
+          </select></span
+        >
+        <div id="game-controls">
+          <i
+            class="fa fa-refresh"
+            id="restart-button"
+            style="font-size: 24px"
+          ></i>
+          <span id="pause-button"
+            ><i class="fa fa-pause" style="font-size: 24px"></i
+          ></span>
+        </div>
+      </div>
+      <div id="game-board"></div>
+      <div class="game-details">
+        <span class="score">Score: 0</span>
+        <span class="high-score">High Score: 0</span>
+      </div>
+      <div id="controls">
+        <div class="row">
+          <button id="up-button">↑</button>
+        </div>
+        <div class="row">
+          <button id="left-button">←</button>
+          <button id="down-button">↓</button>
+          <button id="right-button">→</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

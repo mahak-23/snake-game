@@ -31,3 +31,11 @@ The Snake Game is a classic arcade game where the player controls a snake that m
 6. Avoid collisions with the walls of the game board and the snake's own body.
 7. The game ends when the snake collides, and a game-over message is displayed.
 8. If you achieve a new high score, it will be saved locally and displayed on subsequent plays.
+
+### On Laptop
+![image](https://github.com/mahak-23/snake-game/assets/107416996/db93cb40-ceba-47f2-9459-0d5b148fbb1c)
+
+### On Mobile
+![image](https://github.com/mahak-23/snake-game/assets/107416996/10f2afd3-beab-48ec-a55b-f6ec5d4c9d99)
+
+
